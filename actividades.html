@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SPPdeG</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/webIconP5.jpeg" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/6af37e65ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="hidden">
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+    <header>
+      <nav id="nav" class="nav1">
+        <div class="contenedor-nav">
+          <div class="logos">
+            <a href="https://www.unam.mx/" target="_blank"
+              ><img src="img/unam.svg" alt=""
+            /></a>
+            <a href="http://enp.unam.mx/" target="_blank"
+              ><img src="img/ENPlogo.svg" alt=""
+            /></a>
+            <a href="https://www.enp5.unam.mx/" target="_blank">
+              <img src="img/enp5.png" alt=""
+            /></a>
+            <a>
+              <img src="img/letras.png" alt="" class="ocultar-en-movil"
+            /></a>
+          </div>
+          <div class="enlaces" id="enlaces">
+            <a href="index.html">Inicio</a>
+            <!--<a href="#uno">Documentación</a>
+            <a href="#dos">Asistentes</a>
+            <a href="#tres">Memorias</a>-->
+          </div>
+          <div class="icono" id="open">
+            <span>&#9776;</span>
+          </div>
+        </div>
+      </nav>
+      <div class="textos"><br><br>
+        <h1 class="title">Seminario Permanente en Perspectiva de Género</h1>
+        <br />
+        <h2>Escuela Nacional Preparatoria Plantel 5 "José Vasconselos"</h2>
+      </div>
+    </header>
+    <main>
+      <div id="morado-rosa">
+        <br />
+        <section class="docs contenedor" id="sias">
+          <h3>Actividades</h3>
+          <p>Talleres</p>
+          <p class="after"></p>
+          <div class="cardAct">
+            <div class="content-cardAct">
+              <div class="publics">
+                <a href="#" class="modal-trigger"
+                  ><img src="img/taller1.png" alt=""
+                /></a>
+              </div>
+
+              <div class="textoconsultasAct">
+                <h4>Taller</h4>
+                <p id="name">
+                  "Reconstruir nuestros programas de estudio en clave feminista"<br>
+                  Ponente: 
+                  Dra. Selene Aldana Santana<br>
+                  Facultad de Ciencias Políticas y Sociales UNAM<br>
+                  Moderador:
+                  Mtro. Alan Javier Pérez Vázquez
+                </p>
+                <br />
+              </div>
+            </div>
+            <br>
+
+            
+               
+        </section>
+      </div>
+      <!-- Modales -->
+      <div id="modal-1" class="modal">
+        <div id="modalS" class="modal-content">
+          <span title="cerrar" class="modal-close">&times;</span>
+
+          <div class="carrusel">
+            <div class="imagen">
+              <a href="img/modalCreditos.png" target="_blank"><img src="img/modalCreditos.png" alt="Imagen 1"></a>
+            </div>
+            <div class="imagen">
+              <a href="img/modalC2.png" target="_blank"><img src="img/modalC2.png" alt="Imagen 2"></a>
+            </div>
+            <div class="imagen">
+              <a href="img/modal.png" target="_blank"><img src="img/modal.png" alt="Imagen 3"></a>
+            </div>
+            <!-- Agrega más imágenes según necesites -->
+          </div>
+          
+        
+          <button class="flecha-izquierda" onclick="cambiarImagen(-1)">&#8249;</button>
+          <button class="flecha-derecha" onclick="cambiarImagen(1)">&#8250;</button>
+          
+
+
+        </div>
+      </div>
+
+      
+
+      <div id="modal-2" class="modal">
+        <div id="modalS" class="modal-content">
+          <span title="cerrar" class="modal-close">&times;</span>
+
+          <
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="container-fluid text-center">
+      
+      <div class="footer-content">
+        
+      
+        <div class="columna">
+          <br />
+          <p>
+            Hecho en México, todos los derechos reservados 2024
+            <br />
+            Esta página puede ser reproducida con fines no lucrativos,
+            <br />
+            siempre y cuando no se mutile, se cite la fuente completa y su
+            dirección electrónica.
+            <br />
+            De otra forma requiere permiso previo por escrito de la institución. <span id="credits-link" class="credits">Créditos</span>
+            <br />
+            <br />
+            Sitio web administrado por:
+            <br />
+            La Escuela Nacional Preparatoria plantel 5.
+            <br />
+            <br />
+            
+          </p>
+          <br />
+        </div>
+        <div class="columna">
+          <p>Síguenos:</p>
+          <br />
+          <a
+            id="link"
+            href="https://www.youtube.com/@direccionprepa5/featured"
+            target="_blank"
+          >
+            <i class="material-icons">smart_display</i>
+          </a>
+          <br>
+          <br>
+          <p>Contacto:</p>
+          <br>
+          <p class="mail"><i id="icon3" class="material-icons">mail</i>
+          </a>direccion.p5@enp.unam.mx</p>
+        </div>
+        <div class="columna">
+          <div class="footimg-container">
+            <img class="footimg" src="img/fima.png" alt="footer" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<!-- Modal -->
+<div id="credits-modal" class="modalCredits">
+  <div class="modal-Credits">
+    
+    <span title="Cerrar" class="close">&times;</span>
+    
+    <!-- Inicio -->
+    <div class="modal-section start">
+      <p class="negritas">Comité organizador:</p>
+        <p>Mtra. Eugenia Segovia Mora<br>
+        Mtra. Gabriela Peña de la Cruz<br>
+        Mtra. Karla Arlen Ortíz Soto<br>
+        
+        Mtro. Jaime Cortés Vite<br>
+        Mtro. Antonio Figueroa Gutiérrez<br>
+        Mtro. Alan Javier Pérez Vázquez<br>
+        Mtro. David Ignacio Velázquez Rendón<br>
+        <br>
+      </p>
+    </div>
+    
+    <!-- Final -->
+    <div class="modal-section end">
+      <p class="negritas">Diseño:</p>
+        <p>Mtro. Antonio Figueroa Gutiérrez<br>
+        <br>
+      </p>
+      <p class="negritas">Diseño y Desarrollo Web:</p>
+        <p>Técnico Académico: Carlos Tlecuitl Luna
+      </p>
+    </div>
+    
+  </div>
+</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+    <script src="js/fondo.js"></script>
+    <script src="js/move.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/carga.js"></script>
+    <script src="js/cerrar.js"></script>
+    <script src="js/modalCredits.js"></script>
+    <script src="js/carrusel.js"></script>
+  </body>
+</html>
